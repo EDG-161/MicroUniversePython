@@ -1,7 +1,7 @@
 import pymysql
 
 def getBacterias():
-    db = pymysql.connect("localhost","root","n0m3l0","microuniverse")
+    db = pymysql.connect("gautabases.ga","microuniverse_user","microuniverse_user_PASS_223","microuniverse")
     cursor = db.cursor()
     grafica = []
     sql = "SELECT * FROM cbacteria"
@@ -13,7 +13,7 @@ def getBacterias():
 
 
 def getGrafica(id):
-    db = pymysql.connect("localhost","root","n0m3l0","microuniverse")
+    db = pymysql.connect("gautabases.ga","microuniverse_user","microuniverse_user_PASS_223","microuniverse")
     cursor = db.cursor()
     grafica = []
     sql = "SELECT * FROM mpoblaciones WHERE id_pob = {}".format(id)
@@ -26,7 +26,7 @@ def getGrafica(id):
     return grafica
 
 def getbac(id):
-    db = pymysql.connect("localhost","root","n0m3l0","microuniverse")
+    db = pymysql.connect("gautabases.ga","microuniverse_user","microuniverse_user_PASS_223","microuniverse")
     cursor = db.cursor()
     sql = "SELECT * FROM mproyectos WHERE id_pry = {}".format(id)
     cursor.execute(sql)
@@ -42,7 +42,7 @@ def getbac(id):
 
 
 def getbacR(id):
-    db = pymysql.connect("localhost","root","n0m3l0","microuniverse")
+    db = pymysql.connect("gautabases.ga","microuniverse_user","microuniverse_user_PASS_223","microuniverse")
     cursor = db.cursor()
     sql = "SELECT * FROM cbacteria WHERE id_bac = {}".format(id)
 
