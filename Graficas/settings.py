@@ -25,7 +25,7 @@ SECRET_KEY = '=^x-by))&4^+*g*0j$^3-f%98vsjs(!gyfijg794z-wvp038@3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.24', 'localhost', '127.0.0.1','microuniverse.org:8088']
+ALLOWED_HOSTS = ['192.168.0.24', 'localhost', '127.0.0.1','microuniverse.org:8088','microuniverse.org']
 
 
 # Application definition
